@@ -45,8 +45,19 @@ const escurecer = () => {
 }
 
 
+// PAGINA CONVERSAO:
 
+const resetar = () => {
+    
+    document.getElementById('valoremreal').value = "";
+    document.getElementById('resultvalor').innerHTML = "";
+}
 
+const resetar2 = () => {
+    
+    document.getElementById('valoremcelsius').value = "";
+    document.getElementById('resultemp').innerHTML = "";
+}
 
 
 // conversor de real:
@@ -54,16 +65,18 @@ const converterreal = () => {
     let resultadovalor = 0;
     const real = parseFloat(document.getElementById("valoremreal").value);
     const opcmoeda = document.getElementById("opcaomoeda").value;
-    
-    if(opcmoeda == "d"){
-        resultadovalor= real / (5.06); 
-    }else {
-        resultadovalor = real / 6;
-    }
+    if (isNaN(real)) {
+        alert('Digite um valor em real');
+        } else{
+            if(opcmoeda == "d"){
+                resultadovalor= real / (5.06); 
+            }else {
+                resultadovalor = real / 6;
+            }
+        }
 
-    document.getElementById('resultvalor').innerHTML =  ` ${resultadovalor.toFixed(3)}`;
+    document.getElementById('resultvalor').innerHTML =  ` ${resultadovalor.toFixed(2)}`;
 }
-
 
 
 
@@ -73,15 +86,18 @@ const convertertemp = () => {
     let  resultadotemp = 0;
     const temp = parseFloat(document.getElementById("valoremcelsius").value);
     const opctemp = document.getElementById("opcaotemp").value;
-    
-    if(opctemp == "f"){
-        resultadotemp = ((temp * 9/5) + 32); 
-    }else {
-        resultadotemp = temp + 273;
-    }
+        if (isNaN(temp)) {
+            alert('Digite um valor para temperatura');
+            } else{
+                 if(opctemp == "f"){
+            resultadotemp = ((temp * 9/5) + 32); 
+                }else {
+                    resultadotemp = temp + 273;
+                }
+            }
 
-    document.getElementById('resultemp').innerHTML = ` ${resultadotemp.toFixed(3)}`;
-}
+        document.getElementById('resultemp').innerHTML = ` ${resultadotemp.toFixed(2)}`;
+    }
 
 
 

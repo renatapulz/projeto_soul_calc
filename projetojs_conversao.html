@@ -14,9 +14,9 @@
       <div class="centralizar">
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projetojs_conversao.html">Conversões</a></li>
-            <li><a href="projetojs_calculadora.html">Calculadora</a></li>
+            <li><a class="botoesmenu" href="index.html">Home</a></li>
+            <li><a class="botoesmenu" href="projetojs_conversao.html">Conversões</a></li>
+            <li><a class="botoesmenu" href="projetojs_calculadora.html">Calculadora</a></li>
           </ul>
           <div class="logo">
             <img src="img/Logo soulcalc.JPEG">
@@ -52,7 +52,7 @@
                     <legend>Real para&nbsp;</legend>
                   <div class="espaco1form">
                     <label for="valoremreal"> R$</label>
-                    <input type="number" name="valor" placeholder="Digite um valor" id="valoremreal" required="required">
+                    <input type="number" name="valor" placeholder="Digite um valor" id="valoremreal">
                     <select id="opcaomoeda">
                       <option value="d">Dolar</option>
                       <option value="e">Euro</option>
@@ -62,6 +62,7 @@
                   <div class="espaco2form">
                     <p>Resultado<p>
                     <div id="resultvalor"></div>
+                    <button class="botaopgconver" type="reset" onclick="resetar()">Limpar</button>
                   </div> 
                 </fiedset>
               </form>
@@ -76,8 +77,8 @@
                     <legend>Celsius para&nbsp;</legend>
                   <div class="espaco1form">
                     <label for="valoremcelsius"> &degC</label>
-                    <input type="number" placeholder="Digite um valor" id="valoremcelsius" required="required" >
-                    <select id="opcaotemp" required="required" >
+                    <input type="number" placeholder="Digite um valor" id="valoremcelsius" >
+                    <select id="opcaotemp">
                       <option value="f">Fahrenheit</option>
                       <option value="k">Kelvin</option>
                     </select>
@@ -86,6 +87,7 @@
                   <div class="espaco2form">
                     <p>Resultado</p>
                     <div id="resultemp"></div>
+                    <button class="botaopgconver" type="reset" onclick="resetar2()">Limpar</button>
                   </div>  
                 </fiedset> 
               </form>
