@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="projetojs_css.css" />
+  <script type="text/javascript" src="projetojs.js"></script>
+  <title>SoulCalc - Calculadora</title>
+</head>
+<body>
+  <div id="tudo">
+    <header>
+      <div class="centralizar">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projetojs_conversao.html">Conversões</a></li>
+            <li><a href="projetojs_calculadora.html">Calculadora</a></li>
+          </ul>
+          <div class="logo">
+            <img src="img/Logo soulcalc.JPEG">
+          </div> 
+        </nav>
+      </div>
+    </header>
+    <main>
+        <section>  
+          <div class="centralizar">
+            <div class="acessibilidade">
+              <div class="acess">
+                <button class ="acessbotao" onclick="diminuir()">Diminuir letra</button>
+                <button class ="acessbotao"  onclick="aumentar()">Aumentar letra </button>
+              </div>
+              <button onclick="escurecer()" id="darkmode" class="darkmode"><img src="img/night-mode.png"></button>
+            </div>  
+          </div>
+        </section>
+        <section>
+          <div class="centralizar">
+            <div class="titulocont">
+              <h1>Soul Calc</h1>
+              <h3>Calculadora</h3>
+              <p><br>Para usar a Soul Calc digite os valores primeiro, em seguida escolha a função desejada: </p>
+            </div>
+            <div class="calculadora">
+              <div class="calclinha1">
+                <input type="number" class="linha1campo" placeholder="Valor de A" style="text-align: center" id="a"/>
+                <input type="number" class="linha1campo" placeholder="Valor de B" style="text-align: center" id="b" />
+                <input type="reset" class="linha1campo" value="Limpar" onclick="limpar()"/>
+              </div>
+              <div class="calclinha2">
+                <button class="linha2campo" onclick="calcular('somar')">+</button>
+                <button class="linha2campo" onclick="calcular('subtrair')">-</button>
+                <button class="linha2campo" onclick="calcular('multiplicar')">x</button>
+                <button class="linha2campo" onclick="calcular('dividir')">/</button>
+              </div>
+              <div class="calclinha3">
+                <button class="linha3campo" onclick="calcular('porcentagem')">%</button>
+                <button class="linha3campo" onclick="calcular('aelevado2')">A<sup>2</sup></button>
+                <button class="linha3campo" onclick="calcular('belevado2')">B<sup>2</sup></button>
+                <button class="linha3campo" onclick="calcular('aelevadob')">A<sup>B</sup></button>
+              </div>
+              <div class="calclinha4">
+                <div class="resultadocalc" id="result">Resultado</div>
+              </div>
+            </div>
+        </div>
+        </section>
+        <footer>
+          <div class="centralizar">
+            <div class="rodape">
+              <div class="imgrodape"><img src="img/Logo soulcalc.JPEG"></div>
+              <div class="textorodape">
+                <p>Aluna: Renata Pulz</p>
+                <a href="https://www.linkedin.com/in/renata-pulz-781aa2191/" target="_blank"><img src="img/linkedin.png"></a>
+                <a href="https://www.instagram.com/renatapulz/" target="_blank"><img src="img/instagram.png"></a>
+                <a href="https://www.facebook.com/renata.pulz" target="_blank"><img src="img/facebook.png"></a>
+              </div>
+            </div>
+          </div>
+        </footer>

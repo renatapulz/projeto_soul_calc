@@ -1,0 +1,354 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* para fazer a acessibilidade */
+body{
+  font-size: 26px;
+}
+
+
+/* div criada pra deixar tudo centralizado */
+.centralizar {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* imagem - logo */
+.logo{
+  margin-left: 30px;
+}
+
+header .logo img {
+  width: 120px;
+  margin: 15px;
+  border-radius: 15%;
+}
+
+/* parte de navegação - menu */
+nav{
+  background-color: #c33882;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* mudar a cor se aplicar o dark */
+.dark nav{
+  background-color:#62374e;
+}
+
+/* menu - navegação: */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 90px 20px 15px 20px;
+  padding: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* secao acessibilidade */
+.acessibilidade{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between; 
+  padding: 0 25px;
+  }
+
+  /* mudar a cor se aplicar o dark */
+.dark .acessibilidade {
+  background-color:#a4a4a4;
+}
+
+.acessbotao{
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+/* botao - dark mode */
+.darkmode{
+ border:none;
+ background:none;
+}
+
+.darkmode img{
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+
+/* img slider: */
+#itens{
+  padding-bottom: 15px;
+}
+
+
+.item img{
+  width: 100%;
+  height: 300px;
+}
+
+  /* mudar a cor se aplicar o dark */
+  .dark #itens {
+    background-color:#a4a4a4;
+  }
+
+
+/* espaço conversao de medidas / calculadora*/
+ .espconv{
+  background-color: #00ccccd5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 65px 10px;
+  align-items: center;
+}
+
+/* mudar a cor se aplicar o dark */
+.dark .espconv {
+  background-color:#1e5f74;
+  color: white;
+}
+
+
+.espcalc{
+  background-color:#9470dbd5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 65px 10px;
+  align-items: center;
+}
+
+/* mudar a cor se aplicar o dark */
+.dark .espcalc {
+  background-color:#301b3f;
+  color: white;
+}
+
+
+.imgespaco img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.textoespaco{
+  padding: 0 25px;
+}
+
+.textoespaco h1{
+  padding-bottom: 20px;
+}
+
+.h1calc{
+  text-align: right;
+}
+
+/* footer */
+.rodape{
+  background-color: #c33882ce;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+.imgrodape{
+  margin: 15px 0;
+}
+
+.imgrodape img{
+  width: 60px;
+}
+
+.textorodape{
+  font-size: 20px;
+}
+
+.textorodape p{
+  margin-left: -10px;
+  margin-bottom: 5px;
+}
+
+.textorodape img{
+  width: 35px;
+}
+
+
+/* para mudar a cor do body */
+.dark {
+  background: rgba(90, 89, 89, 0.746);
+}
+
+
+/* mudar a cor se aplicar o dark */
+.dark .rodape {
+  background-color:#62374e;
+  color: white;
+}
+
+
+/* pagina interna - conversao: */
+
+fieldset{
+  border:2px solid black;
+  border-radius: 8px;
+}
+
+
+.conversao{
+  padding: 10px 0;
+}
+
+/* se ativar o dark mode: */
+.dark .conversao{
+  color: white;
+}
+
+/* vale para o titulo da pag de conversao e da calculadora */
+.titulocont{
+  text-align: center;
+  padding: 10px;
+}
+
+.conteudo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 10px 0;
+}
+
+.conteudo2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 10px 0;
+  margin-bottom: 40px;
+}
+
+.espaco1form{
+  padding: 15px;
+
+  }
+
+  .espaco2form{
+    padding: 15px;
+    text-align: justify;
+  }
+
+  label{
+    display: inline-block;
+    font-size: 23px;
+  }
+  
+  /* se colocar dark: */
+.dark input, .dark select, .dark .botaoform{
+  background-color: #d6d0caa4;
+}
+
+  input {
+    border: 1px solid #999;
+    font-size: 23px;
+  }
+
+  select{
+    font-size: 23px;
+    width: 150px;
+  }
+
+  .botaoform{
+    font-size: 23px;
+    width: 130px;
+  }
+
+  /* espaço para colocar o valor do conversor de real */
+#resultvalor, #resultemp{
+  width: 550px;
+  border: 1px solid #999;
+  height: 26px;
+}
+
+
+/* pagina calculadora: */
+.calculadora{
+  border: 3px solid black;
+  border-radius: 15px;
+  width: 630px;
+  margin: 40px auto 90px auto;
+  ;
+}
+
+.calclinha1, .calclinha2, .calclinha3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+}
+
+.linha1campo {
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #efefef;
+  margin: 10px 15px 0 15px;
+  padding: auto;
+}
+
+.linha2campo, .linha3campo {
+  width: 125px;
+  height: 50px ;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #efefef;
+  margin: 0 auto;
+}
+
+.linha2campo{
+  line-height: 50px;
+  font-size: 26px;
+}
+
+.linha3campo{
+  line-height: 35px;
+  font-size: 26px;
+}
+
+.calclinha4{
+  width: 590px;
+  height: 50px ;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px auto;
+  background-color: #efefef;
+}
+
+.resultadocalc{
+  line-height: 50px;
+  text-align: center;
+}
