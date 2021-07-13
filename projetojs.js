@@ -15,17 +15,17 @@ function aumentar() {
 // slider
 let intervalo = 3000;
 function slide1(){
-    document.getElementById("banner").src ="img/banner1.jpg";
+    document.getElementById("banner").src ="https://firebasestorage.googleapis.com/v0/b/kinetic-scheme-317614.appspot.com/o/banner1.png?alt=media&token=ea5b3b39-e114-4a11-9e78-62e402636e06";
     setTimeout("slide2()",intervalo);
 }
 
 function slide2(){
-    document.getElementById("banner").src ="img/banner2_0.jpg";
+    document.getElementById("banner").src ="https://firebasestorage.googleapis.com/v0/b/kinetic-scheme-317614.appspot.com/o/banner2_0.png?alt=media&token=ebc99fd3-bfb9-40f0-a5bb-2c11b8f0001c";
     setTimeout("slide3()",intervalo);
 }
 
 function slide3(){
-    document.getElementById("banner").src ="img/banner3.jpg";
+    document.getElementById("banner").src ="https://firebasestorage.googleapis.com/v0/b/kinetic-scheme-317614.appspot.com/o/banner3.png?alt=media&token=94cd246e-a279-473c-9be2-a8f71e245812";
     setTimeout("slide1()",intervalo);
 }
 
