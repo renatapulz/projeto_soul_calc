@@ -1,58 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="projetojs_css.css" />
-  <script type="text/javascript" src="projetojs.js"></script>
-  <title>SoulCalc</title>
-</head>
-<body onLoad="slide1()">
-  <div id="tudo">
-    <header>
-      <div class="centralizar">
-        <nav>
-          <ul>
-            <li><a class="botoesmenu" href="index.html">Home</a></li>
-            <li><a class="botoesmenu" href="projetojs_conversao.html">Conversões</a></li>
-            <li><a class="botoesmenu" href="projetojs_calculadora.html">Calculadora</a></li>
-          </ul>
-          <div class="logo">
-            <img src="https://firebasestorage.googleapis.com/v0/b/kinetic-scheme-317614.appspot.com/o/logo%20soulcalc.png?alt=media&token=870e5e1f-1907-40b1-8710-2624e7072beb">
-          </div> 
-        </nav>
-      </div>
-    </header>
-    <main>
-        <section>  
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="projetojs_css.css" />
+    <script type="text/javascript" src="projetojs.js"></script>
+    <title>SoulCalc</title>
+  </head>
+  <body onLoad="slide1()">
+    <div id="tudo">
+      <header>
+        <div class="centralizar">
+          <nav>
+            <ul>
+              <li><a class="botoesmenu" href="index.html">Home</a></li>
+              <li>
+                <a class="botoesmenu" href="projetojs_conversao.html"
+                  >Conversões</a
+                >
+              </li>
+              <li>
+                <a class="botoesmenu" href="projetojs_calculadora.html"
+                  >Calculadora</a
+                >
+              </li>
+            </ul>
+            <div class="logo">
+              <img src="img/Logo soulcalc.JPEG" />
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section>
           <div class="centralizar">
             <div class="acessibilidade">
               <div class="acess">
-                <button class ="acessbotao" onclick="diminuir()">Diminuir letra</button>
-                <button class ="acessbotao"  onclick="aumentar()">Aumentar letra </button>
+                <button class="acessbotao" onclick="diminuir()">
+                  Diminuir letra
+                </button>
+                <button class="acessbotao" onclick="aumentar()">
+                  Aumentar letra
+                </button>
               </div>
-              <button onclick="escurecer()" id="darkmode" class="darkmode"><img src="https://firebasestorage.googleapis.com/v0/b/kinetic-scheme-317614.appspot.com/o/night-mode.png?alt=media&token=91a5c5ab-46e5-4a87-bb5e-29eae32b2146"></button>
-            </div>  
+              <button onclick="escurecer()" id="darkmode" class="darkmode">
+                <img src="img/night-mode.png" />
+              </button>
+            </div>
           </div>
         </section>
         <section>
           <div class="centralizar">
             <div id="itens">
-              <div class="item"><img src="https://firebasestorage.googleapis.com/v0/b/kinetic-scheme-317614.appspot.com/o/banner1.png?alt=media&token=ea5b3b39-e114-4a11-9e78-62e402636e06" alt="slide1" id="banner"></div>
+              <div class="item">
+                <img src="img/banner1.jpg" alt="slide1" id="banner" />
+              </div>
             </div>
           </div>
         </section>
         <article>
           <div class="centralizar">
             <div class="espconv">
-              <div class="imgespaco"><a href="projetojs_conversao.html"><img src="https://firebasestorage.googleapis.com/v0/b/kinetic-scheme-317614.appspot.com/o/espaco.png?alt=media&token=86e2170d-c144-47da-b63d-8a41f76dbc73"></a></div>
+              <div class="imgespaco">
+                <a href="projetojs_conversao.html"
+                  ><img src="img/espaco.jpg"
+                /></a>
+              </div>
               <div class="textoespaco">
                 <h1>Conversões</h1>
-                <p>Realize conversões de temperatura e moedas em um único lugar!</p>
+                <p>
+                  Realize conversões de temperatura e moedas em um único lugar!
+                </p>
               </div>
             </div>
-          </div>  
+          </div>
         </article>
         <article>
           <div class="centralizar">
@@ -61,24 +83,36 @@
                 <h1 class="h1calc">Calculadora</h1>
                 <p>Faça cáculos de forma rápida e prática!</p>
               </div>
-              <div class="imgespaco"><a href="projetojs_calculadora.html"><img src="https://firebasestorage.googleapis.com/v0/b/kinetic-scheme-317614.appspot.com/o/calc.png?alt=media&token=2f4951da-0928-4950-93d8-28ef17428bd1"></a></div>
+              <div class="imgespaco">
+                <a href="projetojs_calculadora.html"
+                  ><img src="img/calc.jpg"
+                /></a>
+              </div>
             </div>
-          </div>  
+          </div>
         </article>
-    </main>
-    <footer>
-      <div class="centralizar">
-        <div class="rodape">
-          <div class="imgrodape"><img src="https://firebasestorage.googleapis.com/v0/b/kinetic-scheme-317614.appspot.com/o/logo%20soulcalc.png?alt=media&token=870e5e1f-1907-40b1-8710-2624e7072beb"></div>
-          <div class="textorodape">
-            <p>Aluna: Renata Pulz</p>
-            <a href="https://www.linkedin.com/in/renata-pulz-781aa2191/" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/kinetic-scheme-317614.appspot.com/o/linkedin.png?alt=media&token=4834e6bf-82b3-4036-b96b-bdbab0a41d51"></a>
-            <a href="https://www.instagram.com/renatapulz/" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/kinetic-scheme-317614.appspot.com/o/instagram.png?alt=media&token=08db9eb6-4580-47c9-9800-3318b47623cb"></a>
-            <a href="https://www.facebook.com/renata.pulz" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/kinetic-scheme-317614.appspot.com/o/facebook.png?alt=media&token=eab6fbb7-6d0e-487d-9f0b-ea36a3c9aa26"></a>
+      </main>
+      <footer>
+        <div class="centralizar">
+          <div class="rodape">
+            <div class="imgrodape"><img src="img/Logo soulcalc.JPEG" /></div>
+            <div class="textorodape">
+              <p>Aluna: Renata Pulz</p>
+              <a
+                href="https://www.linkedin.com/in/renata-pulz-781aa2191/"
+                target="_blank"
+                ><img src="img/linkedin.png"
+              /></a>
+              <a href="https://www.instagram.com/renatapulz/" target="_blank"
+                ><img src="img/instagram.png"
+              /></a>
+              <a href="https://www.facebook.com/renata.pulz" target="_blank"
+                ><img src="img/facebook.png"
+              /></a>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-  </div>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
